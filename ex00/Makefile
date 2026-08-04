@@ -1,7 +1,7 @@
-NAME = Serializer
+NAME = FuncUtils
 CC = c++
 FLAGS = -g -Wall -Werror -Wextra -std=c++98
-SRCS = main.cpp srcs/Serializer.cpp
+SRCS = main.cpp
 OBJS_DIR = objs
 OBJS = ${SRCS:%.cpp=$(OBJS_DIR)/%.o}
 
