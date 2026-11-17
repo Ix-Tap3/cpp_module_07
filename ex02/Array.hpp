@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Array.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pcaplat </var/spool/mail/pcaplat>          +#+  +:+       +#+        */
+/*   By: pcaplat <pcaplat@42angouleme.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/12 20:42:25 by pcaplat           #+#    #+#             */
-/*   Updated: 2026/08/15 08:47:48 by pcaplat          ###   ########.fr       */
+/*   Updated: 2026/11/17 17:37:57 by pcaplat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,11 @@ private:
 
 public:
 	Array	( void ) : _arr(NULL), _size(0) { }
-	Array	( unsigned int size ) : _arr( new T[size]), _size(size) { }
+	Array	( unsigned int size ) : _arr( new T[size]), _size(size)
+	{
+		for (unsigned int i = 0; i < size; i++)
+			this->_arr[i] = T(0);
+	}
 	Array	( const Array &other )
 	{
 		if (this != &other)
