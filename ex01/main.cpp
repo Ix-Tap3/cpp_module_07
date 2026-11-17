@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pcaplat </var/spool/mail/pcaplat>          +#+  +:+       +#+        */
+/*   By: pcaplat <pcaplat@42angouleme.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/04 20:46:26 by pcaplat           #+#    #+#             */
-/*   Updated: 2026/08/12 20:29:20 by pcaplat          ###   ########.fr       */
+/*   Updated: 2026/11/17 17:28:27 by pcaplat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	main ( void )
 {
 	char			letters[] = { 'z', 'b', 'c' };
 	int				test[] = { 1, 2, 3 };
-	const double	numbers[] = { 8.6, 12345.12345, 18.4 };
+	double	numbers[] = { 8.6, 12345.12345, 18.4 };
 
 	std::cout << "Test array values: " << std::endl;
 	iter( test, 3, displayElem<int> );
